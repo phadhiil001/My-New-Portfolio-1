@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <script src="script.js"></script>
+    <title>Contact Page</title>
+</head>
+<body>
+    <nav id="desktop-nav">
+        <div class="logo">Fadlullah J.I</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo">Fadlullah J.I</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div class="menu-links">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html" onclick="toggleMenu()">About</a></li>
+                <li><a href="contact.html" onclick="toggleMenu()">Contact</a></li>
+            </ul>
+        </div>
+        </div>
+    </nav>
+    <p class="section__text__p1">Get in Touch</p>
+    <h1 class="title">Contact Me</h1>
+    <div id="socials-container">
+        <img src="./assests/linkedin.png" alt="My LinkedIn Profile" class="icon" onclick="location.href = 'https://linkedin.com/in/fadlullah-jamiu-imam'">
+        <img src="./assests/github.png" alt="My GitHub Profile" class="icon" onclick="location.href = 'https://github.com/phadhiil001'">
+    </div><br><br>
+    <div id="contact-form">
+        <form id="contactForm" action="mailto:jamiuimamfadlullah@gmail.com" method="POST">
+            <div class="input-container">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter your full-name">
+                <p id="nameError" class="error">Please enter your name</p>
+            </div><br>
+            
+            <div class="input-container">
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" placeholder="0000000000">
+                <p id="phoneError" class="error">Please enter a 10-digit phone number</p>
+            </div><br>
+            
+            <div class="input-container">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="example@gmail.com">
+                <p id="emailError" class="error">Please enter a valid email address</p>
+            </div><br>
+            
+            <div class="input-container">
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" ></textarea>
+            </div><br>
+            
+            <div class="button-container">
+                <input type="submit" value="Submit"  class="button button-color-2">
+                <input type="reset" value="Reset" class="button button-color-2">
+            </div>
+        </form>
+    </div>
+    
+        <footer>
+            <div class="footer_nav">
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <br>
+            <p>Copyright &#169; 2023 Fadlullah J-I. All rights reserved.</p>
+        </footer>
+</body>
+</html>

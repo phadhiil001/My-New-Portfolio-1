@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <script src="script.js"></script>
+</head>
+<body>
+    <nav id="desktop-nav">
+        <div class="logo">Fadlullah J.I</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo">Fadlullah J.I</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div class="menu-links">
+            <ul>
+                <li><a href="about.html" onclick="toggleMenu()">About</a></li>
+                <li><a href="contact.html" onclick="toggleMenu()">Contact</a></li>
+            </ul>
+        </div>
+        </div>
+    </nav>
+    <section id="profile">
+        <div class="section__pic-container">
+            <img src="./assests/fadeel.png" alt="Fadlullah Profile picture" class="img">
+        </div>
+        <div class="section__text">
+            <p class="section__text__p1">Hello, I'm</p>
+            <h1 class="title">Fadlullah</h1>
+            <p class="section__text__p2">FrontEnd Developer</p>
+            <div class="button-container">
+                <button class="button button-color-2" onclick="window.open('./assests/FJI. Customer Service Resume.pdf')">Download CV</button>
+
+                <button class="button button-color-1" onclick="location.href = './contact.html'">Contact Info</button>
+            </div>
+            <div id="socials-container">
+                <img src="./assests/linkedin.png" alt="My LinkedIn Profile" class="icon" onclick="location.href = 'https://linkedin.com/in/fadlullah-jamiu-imam'">
+                <img src="./assests/github.png" alt="My GitHub Profile" class="icon" onclick="location.href = 'https://github.com/phadhiil001'">
+            </div>
+        </div>
+    </section>
+    
+    <footer>        
+        <p>Copyright &#169; 2023 Fadlullah J-I. All rights reserved.</p>
+    </footer>
+    
+</body>
+</html>
